@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* Css reset */
+    body {
+        font-family: 'Baloo Bhai', 'cursive';
+        color: white;
+        margin-bottom: 700px;
+        /* padding: 0px; */
+        background: url("images/anush.jpg");
+        background-repeat: no-repeat;
+        /* it is used to adjust width & height of pic */
+        background-size: 100% 100%;
+    }
+
+    .left {
+        /* it is used to adjust all space which is taken by left div */
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        left: 60px;
+        /* border: 2px solid yellow; */
+        /* padding-left: 19px; */
+
+    }
+
+    .left img {
+        /* it is used to convert image from black to white or white to black */
+        filter: invert(100%);
+
+        mix-blend-mode: color-dodge;
+        width: 150px;
+        padding-left: 11px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        /* border: 2px solid red; */
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 20px;
+        line-height: 0px;
+        font-size: 25px;
+
+
+    }
+
+    .mid {
+        display: block;
+        margin: 10px 450px;
+        /* border: 2px solid ; */
+        margin-left: 500px;
+
+
+
+    }
+
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        /* float: left;
+        list-style: none; */
+        /* margin: 2px 6px; */
+        font-size: 20px;
+        padding-right: 30px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        mix-blend-mode: multiply;
+        background-color: black;
+        color: rgb(255, 249, 249);
+
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        top: 12px;
+        right: 20px;
+
+    }
+
+    .right ul li {
+        font-family: 'Baloo Bhai', 'cursive';
+        border: 2px solid rgb(255, 255, 255);
+        width: 100px;
+        border-radius: 8px;
+        /* it is used to be list shift from coloum to row  */
+        float: left;
+        margin: 0px 5px;
+        list-style: none;
+        /* it is used to take text to center of the box  */
+        text-align: center;
+        /* it is used to remove underline from text */
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    .right li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .right li a:hover {
+        color: rgb(127, 127, 127);
+        /* background-color: grey; */
+
+    }
+    .container{
+        border: 2px solid white ;
+        width: 600px;
+        margin-top: 200px;
+        margin-left: 500px;
+        padding-bottom: 10px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container form{
+        text-align: center;
+    }
+    .form-group input{
+        font-family: 'Baloo Bhai', 'cursive';
+        text-align: center;
+        border-radius: 7px;
+        padding: 3px;
+        margin: 3px;
+        width: 200px;
+
+    }
+    .form-group input:hover{
+        background-color: rgb(217, 221, 225);
+        cursor: pointer;
+    }
+
+    .container button{
+        border-radius: 7px;
+        width: 210px;
+        margin: 10px 0px;
+    }
+    .container button:hover{
+        background-color: gray;
+    }
+
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="images/logo4.jpg" alt="">
+            <div>Sharma Fitness</div>
+        </div>
+        <!-- mid box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active" target="_blank">Home</a></li>
+                <li><a href="#" target="_blank">About us</a></li>
+                <li><a href="#" target="_blank">Fitness center</a></li>
+                <li><a href="#" target="_blank">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box for button -->
+        <div class="right">
+            <!-- <button class="btn">Call us now</button>
+            <button class="btn">Email us</button> -->
+            <ul class="navbar1">
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Email us</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <h1> Join the Best Gym of Western Bombay </h1>
+        <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Age">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Gender">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Locality">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Email ID">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Phone Number">
+                </div>
+                <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
